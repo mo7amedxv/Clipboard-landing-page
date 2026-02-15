@@ -461,7 +461,7 @@ header {
 /* Footer */
 footer {
   background-color: var(--Footer-background);
-  padding: var(--spacing-lg) var(--spacing-lg) 0 var(--spacing-lg);
+  padding: var(--spacing-lg);
   text-align: center;
   display: grid;
   place-items: center;
@@ -474,15 +474,12 @@ footer .attribution {
 .footer-logo {
   width: var(--footer-logo-width);
   height: var(--footer-logo-height);
-  margin-bottom: var(--spacing-md);
 }
 footer nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-xg);
-
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
 }
 .footer-nav a {
   color: var(--color-neutral-gray-700);
@@ -496,7 +493,6 @@ footer nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  margin-bottom: var(--spacing-lg);
   gap: var(--spacing-lg);
 }
 

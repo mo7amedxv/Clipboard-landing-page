@@ -365,13 +365,12 @@ header {
     background-size: cover;
   }
   .btn {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
 /* snippets */
 .snippets-container {
-  place-items: center;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xg);
   text-align: left;
@@ -478,7 +477,6 @@ footer .attribution {
 footer nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-xg);
   gap: var(--spacing-lg);
 }
 .footer-nav a {
@@ -509,14 +507,24 @@ footer nav a:hover {
   footer,
   .footer-nav {
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
     text-align: center;
   }
   .footer-socials {
     grid-template-columns: repeat(3, auto);
   }
-}
+  .footer-logo {
+    margin-bottom: var(--spacing-lg);
+  }
+  .footer-nav {
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-md);
+  }
 
+  .footer-socials {
+    margin-top: var(--spacing-md);
+    gap: var(--spacing-md);
+  }
+}
 /* button group */
 .button-group {
   display: flex;

@@ -35,7 +35,7 @@
   /* ===== Buttons ===== */
   --button-padding-vertical: 0.75rem;
   --button-padding-horizontal: 1.5rem;
-  --button-border-radius: 0.5rem;
+  --button-border-radius: 2rem;
 
   /* ===== Spacing ===== */
   --spacing-xs: 0.25rem; /* 4px */
@@ -80,7 +80,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: "bai Jamjuree";
+  font-family: "bai Jamjuree", sans-serif;
   overflow-x: hidden;
 }
 
@@ -145,7 +145,7 @@ a {
 }
 /* ===== Attribution ===== */
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
   color: var(--color-neutral-gray-700);
   min-width: 100%;
@@ -216,8 +216,7 @@ a {
   cursor: pointer;
   display: inline-block;
   border: none;
-  transition: 0.3s;
-  border-radius: 2rem;
+  transition: 0.3s ease;
   border-bottom: 3px solid hsla(0, 0%, 25%, 20%);
   font-size: var(--font-size-body);
 }
@@ -403,7 +402,7 @@ header {
 /* access */
 .access-container {
   display: grid;
-  place-items: space-around;
+  place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   /* gap: var(--spacing-xg); */
   padding: 0 var(--spacing-xg);
@@ -531,5 +530,21 @@ footer nav a:hover {
   .button-group {
     flex-direction: column;
     align-items: center;
+  }
+}
+.pt-lg {
+  padding: var(--spacing-lg);
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }
